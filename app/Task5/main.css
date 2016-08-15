@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: 'Open Sans';
+}
+
+#gmap {
+  height: 600px;
+  width: 600px;
+}
+
+#map {
+  height: 400px;
+  width: 400px;
+}
+
+#blockscreen, #modalwindow {
+  position: fixed;
+  display: none;
+}
+
+#blockscreen {
+  background: rgba(0, 0, 0, .5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+#modalwindow {
+  z-index: 11;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #a1a1a1;
+  box-shadow: 0 0 10px #444;
+}
+
+.btn {
+  margin: 50px;
+  border-radius: 5px;
+  margin-top: 40px;
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15B358;
+  padding: 15px 25px;
+  transition: .15s;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.btn:hover {
+  background-color: #48E68B;
+  color: white;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.red {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.red:hover {
+  background-color: #FF6656;
+}
+
+.green {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.green:hover {
+  background-color: #48E68B;
+}
+
+#gmap-header {
+  background-color: #009688;
+  height: 50px;
+  cursor: move;
+}
+
+#gmap-window {
+  display: none;
+  position: absolute;
+}
+
+#close-window{
+  background-image: url("img/close.png");
+  height: 15px;
+  width: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  float: right;
+  margin: 18 20 10 0px;
+}
+
+#gmap-title {
+  font-size: 16px;
+  padding: 14px;
+  color: #FFF;
+  display: inline-block;
+}

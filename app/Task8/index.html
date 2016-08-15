@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
+    <script type = "text/javascript" src = "js/application.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <title>Рисовалка</title>
+    <style type="text/css">
+      #wrapper { position: relative; }
+      #tablet { border: 1px solid #111; }
+      .style-canvas {
+        display:
+        padding-right: 5px;
+        width: 100px
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <canvas id="tablet" width="500" height="400"></canvas> <br>
+      <input type="button" value="Clean" class="btn btn-default" id="clean-canvas"> <br>
+
+      <label for="colors">Color:</label>
+      <select id="colors" name="colors" class="form-control style-canvas">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+
+      <label for="sizes">Size:</label>
+      <select id="sizes" name="sizes" class="form-control style-canvas">
+        <option value="1">Small</option>
+        <option value="3">Normal</option>
+        <option value="8">Big</option>
+        <option value="14">Very Big</option>
+      </select>
+    </div>
+  </body>
+</html>

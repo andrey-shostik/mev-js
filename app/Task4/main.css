@@ -1,0 +1,34 @@
+body {
+  padding: 20 0 0 0;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 60px;
+  font-size: 20px;
+  float: left;
+  color: grey;
+}
+
+.board {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 602px;
+  height: 602px;
+}
+
+.active-green {
+  background-color: #76FF03;
+}
+
+.active-red {
+  background-color: #F44335;
+}
+
+#ext-element {
+  transition: 0.5s;
+  background: #FFEB3B;
+}
